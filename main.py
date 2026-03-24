@@ -24,6 +24,9 @@ def main():
         # Move to the center and click
         pyautogui.click(center_x, center_y)
 
+        # Wait for 1 second
+        time.sleep(1)
+
         # Move to the quartile and click
         pyautogui.click(quartile_x, quartile_y) 
 
@@ -31,7 +34,7 @@ def main():
         for i in range(20, 0, -1):
             print(f"Waiting... {i}s remaining", end="\r") # end="\r" to overwrite the same line
             time.sleep(1)
-        print("Timer complete!")   
+        print("Timer complete!               ")   
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,29 @@
+{
+    // Erläuterungen von Visual Studio Code:
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+    // eigene Erläuterungen:
+        //"program": "${workspaceFolder}/main.py"
+                // Fixiert den Startpunkt auf eine bestimmte Datei, egal was du 
+                // gerade offen hast (sehr empfohlen für größere Projekte).
+       //"args": ["--input", "data.csv", "--verbose"]
+                // Hier übergibst du Befehlszeilenparameter, 
+                // die du sonst im Terminal tippen würdest.
+       //"env": {"FLASK_APP": "app.py","FLASK_DEBUG": "1"}
+                // Hier kannst du Umgebungsvariablen setzen, 
+                // ohne dein Betriebssystem damit zu "verschmutzen".
+
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
