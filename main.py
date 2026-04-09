@@ -1,7 +1,10 @@
 """
-This is an exemplary project which I use to test the functionality of GitHub.
-So that the project makes some sense, I will use it to test the functionality 
-of a GUI automation library called PyAutoGUI.
+This is an exemplary project which I use to test the functionality of GitHub
+and also the functionality of the Visual Studio Code IDE, especially how
+debugging works in Visual Studio Code.
+
+So that the project makes some sort of sense, I will use it to test the 
+functionality of a GUI automation library called PyAutoGUI.
 """
 
 def main():
@@ -34,7 +37,7 @@ def main():
         for i in range(20, 0, -1):
             print(f"Waiting... {i}s remaining", end="\r") # end="\r" to overwrite the same line
             time.sleep(1)
-        print("Timer complete!               ")   
+        print("Timer complete!                 ")   
 
 if __name__ == "__main__":
     main()
